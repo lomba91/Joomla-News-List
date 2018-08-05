@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* templateHomePage*/
+/* @@@@@@@@@@@@@@@@@@@   Template d'Ateneo  @@@@@@@@@@@@@@@@*/
+/*
+ *  #043659 - #03497C
+ */
+
+/* Eventi in Home Page */
+
+#boxesnewseventi {
+	width: 100%;
+	margin-top: 15px;
+}
+
+#boxeventi {
+	width: 30%;
+	float: left;
+}
+
+#boxnews {
+	width: 67%;
+	float: right;
+}
+
+#box2news {
+	width: 45%;
+	float: left;
+}
+
+#news3 {
+	width: 51%;
+	float: right;
+}
+
+.moduletable_unipinews h3,
+#boxeventi h3.titolobox, #boxeventi h3.titolobox, .moduletable_unipieventi h3,
+#boxnews h3.titolobox, #boxeventi h3.titolobox {
+	border-bottom: 4px solid #7e0105;
+	color: #333;
+	margin: 10px 0; /* Se metto margine in % ho titoli di unipinews e unipieventi storti */
+    padding: 10px 0;
+}
+
+.moduletable_unipieventi h3 a, .moduletable_unipinews h3 a {
+	color: #333333;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+div.event .num a {
+	color: #7e0105;
+	font-size: 1em;
+	font-weight: bold;
+}
+div.event .mese a {
+	color: #333;
+	font-size: 0.9em;
+}
+
+div.event .date a {
+	text-decoration: none;
+}
+
+div.event div.text a {
+	color: #333;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 3px;
+	padding: 0;
+}
+div.event .date {
+	border-bottom: 1px solid #e5cccd;
+	margin-bottom: 6px;
+	margin-top: 8px;
+	padding: 6px 6px 6px 2px;
+}
+
+div.event img.cal {
+	position: absolute;
+	right: 6px;
+	top: 30%;
+}
+div.event img {
+	border: medium none;
+}
+
+/* test stili news */
+
+#other h3 {
+	border-bottom: 0px !important;
+	font-size: 0.9em;
+}
+
+.other ul,
+#other ul {
+	list-style-image: url("../images/other_li.jpg") !important;
+}
+
+span.title, span.intro {
+	display: block;
+}
+.rest {
+	clear: both;
+	display: block;
+	padding-top: 1%;
+}
+
+span.title a {
+	color: #333;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 3px;
+	padding: 0;
+}
+span.title a:hover {
+	text-decoration: underline;
+}
+
+#other a {
+	color: #333;
+}
+#other a:hover {
+	text-decoration: underline;
+}
+
+div.veditutto a {
+	padding-top: 15px;
+	color: #7e0105;
+}
+
+.custom-box {
+	background-color: #f2f1ec;
+	padding: 1%;
+	margin-top: 2%;
+}
+
+.custom-box p {
+	font-weight: bold;
+	font-size: 0.9em;
+}

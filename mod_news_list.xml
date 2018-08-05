@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" method="upgrade" client="site">
+	<name>MOD_NEWSLIST_LABEL</name>
+	<creationDate>Luglio 2018</creationDate>
+	<author>Massimo Lombardi</author>
+	<authorEmail>lomba91@gmail.com</authorEmail>
+	<authorUrl>http://www.massimolombardi.eu</authorUrl>
+	<copyright>Copyright © 2018 - All rights reserved.</copyright>
+	<license>GNU General Public License v3.0</license>
+	<version>1.1</version>
+	<description>MOD_NEWSLIST_DESC</description>
+	<files>
+		<filename module="mod_news_list">mod_news_list.php</filename>
+		<filename>mod_news_list.xml</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>templates</folder>
+		<folder>themes</folder>
+	</files>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="display_limit"
+                    type="text"
+                    label="MOD_NEWSLIST_DL_LABEL"
+                    description="MOD_NEWSLIST_DL_DESC"
+                    default="3">
+                </field>
+
+				<field name="themesClass"
+				       type="list"
+				       default="0"
+				       label="MOD_NEWSLIST_TH_LABEL"
+				       description="MOD_NEWSLIST_TH_DESC">
+					<option value="0">ICagenda</option>
+					<option value="1">Personali</option>
+				</field>
+
+			<field name="icThemes" 
+				showon="themesClass:0"
+				type="folderlist" 
+				label="MOD_NEWSLIST_THEME_LABEL"
+				default="default"
+				hide_default="1"
+				hide_none="1"
+				description="MOD_NEWSLIST_THEME_DESC"
+				directory="/components/com_icagenda/themes/packs">
+			</field>
+
+			<field name="csThemes" 
+				showon="themesClass:1"
+				type="folderlist" 
+				label="MOD_NEWSLIST_THEME_LABEL"
+				default="default"
+				hide_default="1"
+				hide_none="1"
+				description="MOD_NEWSLIST_THEME_DESC"
+				directory="modules/mod_news_list/themes">
+			</field>
+
+
+			<field name="spacer" 
+				type="spacer" 
+				default="" 
+				label="MOD_NEWSLIST_DOC_DESC"/>
+
+            </fieldset>
+		</fields>
+
+	</config> 
+	<languages folder="language">
+		<language tag="it-IT">it-IT/it-IT.mod_news_list.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_news_list.ini</language>
+	</languages>
+</extension>
